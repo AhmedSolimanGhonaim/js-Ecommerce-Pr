@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    rgba(25, 124, 23, 0.9),
+    rgb(255, 255, 255)
+  );
+}
+
+.login-container {
+  width: 800px;
+  background: linear-gradient(
+    to right,
+    rgba(25, 124, 23, 0.9),
+    rgba(0, 0, 0, 0.9)
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.img-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-side img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background 5s ease-in-out;
+  -moz-transition: background 5s ease-in-out;
+  -ms-transition: background 5s ease-in-out;
+  -o-transition: background 5s ease-in-out;
+  -webkit-transition: background 8s ease-in-out;
+  transition: background 5s ease-in-out;
+}
+
+.login-form form button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(25, 124, 23, 0.9),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/src/css/admin.css">
+
+    <script src="/src/scripts/admin.js" defer></script>
+    <script src="/src/scripts/userManagement.js" defer></script>
+
+</head>
+<body>
+    <div class="admin-container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="#product-management">Product Management</a></li>
+                <li><a href="#order-management">Order Management</a></li>
+                <li><a href="#user-management">User Management</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+                 <section id="product-management">
+                <h3>Manage Products</h3>
+                <button id="add-new-product">Add New Product</button>
+                
+                <!-- New Product Form -->
+                <div id="add-product-form" style="display: none;">
+                    <h4>Enter Product Details</h4>
+                    <form id="product-form">
+                        <label for="image">Product Image:</label>
+                        <input type="file" id="image" name="image" required><br>
+                        <img id="image-preview" style="display: none; max-width: 200px; margin-top: 10px;" alt="Image Preview"><br>
+
+                        <label for="name">Product Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter product name" required><br>
+
+                        <label for="price">Product Price:</label>
+                        <input type="number" id="price" name="price" placeholder="Enter product price" required><br>
+
+                        <label for="description">Product Description:</label>
+                        <textarea id="description" name="description" placeholder="Enter product description" required></textarea><br>
+
+                        <button id="new" type="submit">Add Product</button>
+                    </form>
+
+                    <!-- Buttons for editing products -->
+                    <button id="save-changes" style="display: none;">Save Changes</button>
+                    <button id="discard-changes" style="display: none;">Discard Changes</button>
+                </div>
+
+                <div id="product-list">
+                    <!-- Product list will be rendered here -->
+                </div>
+            </section>
+
+
+            <section id="order-management">
+                <h3>Manage Orders</h3>
+                <div id="order-list">
+                    <!-- Order list will be rendered here -->
+                </div>
+            </section>
+
+            <section id="user-management">
+               
+  <h2>User Management</h2>
+  <button id="add-new-user">Add New User</button>
+
+  <!-- Form for adding/editing users -->
+  <form id="add-user-form" style="display: none;">
+    <input type="text" id="user-name" placeholder="Name" required>
+    <input type="email" id="user-email" placeholder="Email" required>
+    <select id="user-role">
+      <option value="admin">Admin</option>
+      <option value="customer">Customer</option>
+      <option value="seller">Seller</option>
+    </select>
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- List of users -->
+  <div id="user-list"></div>
+
+  <!-- Buttons for save and discard changes -->
+  <button id="save-user-changes" style="display: none;">Save Changes</button>
+  <button id="discard-user-changes" style="display: none;">Discard Changes</button>
+
+            </section>
+
+            <section id="analytics">
+                <h3>Analytics</h3>
+                <div id="analytics-data">
+                    <!-- Analytics will be displayed here -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

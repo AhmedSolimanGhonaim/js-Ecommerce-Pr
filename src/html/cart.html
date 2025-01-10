@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/cart.css">
+    <script src="/src/scripts/cart.js" defer></script>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-header">
+            <div class="logo">
+                <p>Sol<br>Green </p><img src="/src/assets/Group.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="/src/main.html">Home Page</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="/src/html/login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <h1>Your Cart</h1>
+
+        <div id="cart-items" class="cart-items-container">
+            <!-- Cart items will be dynamically rendered here -->
+        </div>
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p id="total-amount">Total: $0</p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
